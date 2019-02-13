@@ -10,5 +10,5 @@ import org.springframework.data.repository.CrudRepository;
 
 
 public interface UserMongoRepository extends CrudRepository<User, String> {
-    public User getUser(String userName , String password);
+    public User getUser(String userName);
 }

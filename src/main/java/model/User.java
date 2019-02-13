@@ -2,6 +2,9 @@ package model;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by G510 on 11-02-2019.
  */
@@ -12,6 +15,16 @@ public class User {
     private String name;
     private int age;
     private String email;
+
+    public List<String> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(List<String> roles) {
+        this.roles = roles;
+    }
+
+    private List<String> roles = new ArrayList<>();
 
     public String getPassword() {
         return password;
